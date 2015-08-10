@@ -91,6 +91,7 @@ def send_all():
                 deferred += 1
                 # Get new connection, it case the connection itself has an error.
                 connection = None
+            time.sleep(1)
     finally:
         logging.debug("releasing lock...")
         lock.release()
